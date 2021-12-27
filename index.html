@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Card Hover Effects</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateForm(e){
+            // e.preventDefault();
+            var name=document.getElementById("fname").value;
+            var rollno=document.getElementById("roll").value;
+            var place=document.getElementById("place").value;
+            var email=document.getElementById("email").value;
+            var dob=document.getElementById("dob").value;
+            html="<tr><th>Name</th><th>Roll No</th><th>Place</th><th>E-Mail</th><th>DOB</th></tr>";
+            html+="<tr><td>"+name+"</td><td>"+rollno+"</td><td>"+place+"</td><td>"+email+"</td><td>"+dob+"</td></tr>";
+            document.getElementById("valueres").innerHTML=html;
+        }
+    </script>    
+</head>
+<body>
+    <div class="name">
+    <h1>YatKayan Dessert</h1>
+    </div>
+    <div class="sample">
+    <header>
+        <nav>
+        <ul>
+            
+        <li>
+        <a href="#dic"> Products </a>
+        </li>
+        <li>
+            <a href="#sweet"> Sweet Delight </a>
+            </li>
+        <li>
+        <a onclick="sample()"> Production & Quality </a>
+        </li>
+        <li>
+        <a href="#aboutus"> About Us </a>
+        </li>
+        <li> <a href="#address"> Contact </a>
+        </li>
+        
+            <li>
+                <img src="Dessert-logo.img.png" alt=""></li>
+        </ul>
+        </nav>
+        </header>
+    </div>
+    <script>
+        function myFunction(id)
+        {
+            document.getElementById('myimage'+id).src='https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?cs=srgb&dl=pexels-pixabay-60597.jpg&fm=jpg';
+            // document.getElementsByClassName("add").style.backgroundcolor="red";
+        }
+        function demo(){
+            document.getElementById("us").style.backgroundColor = "white";
+            document.getElementById("us").style.color="green";
+            document.getElementById("us").style.borderRadius="15px";
+        }
+        function sample(){
+            document.getElementsByClassName("contact").style.backgroundColor="antiquewhite";
+            document.getElementsByClassName("sweet").style.backgroundColor="antiquewhite";
+        }
+    </script>
+    <br>
+    <div class="dic">
+        <div class="container">
+            <div class="card">
+                <img id="myimage1"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNIBXsmVwNnjr0TngZhxnzWasTPpizWJF2g&usqp=CAU" alt="">
+                <div class="card-content">
+                    <p>Full of flavours, tender ingredients, and sweetness, Falooda is a complete dessert that can be enjoyed any time. Each time you put a spoon of it in your mouth.</p>
+                    <button class="button" type="button" onmouseover="myFunction('1')">Read More</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img id="myimage2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOLAyxm_dUnaPIt25Pvuzp9kpA7G79h7aNWQ&usqp=CAU" alt="">
+                <div class="card-content">
+                <p>Brownies were initially created in America, they have become a staple in every cafe, bakery and sweet stop globally. There is always a way to customize.</p>
+                <button class="button" type="button" onclick="myFunction('2')">Read More</button>
+            </div>
+            </div>
+            <div class="card">
+                <div class="demo">           
+                <img id="myimage3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcuggaCCnnJT7OZ4lPGubExftXgHOJ9XgcQ&usqp=CAU" alt="">
+                </div>
+                <div class="card-content">
+                <p>Whipping cream will give your ice cream a smooth texture and creamy taste. Heavy cream works well to give vanilla ice cream a rich flavor.</p>
+                        <button class="button" type="button" onclick="myFunction('3')">Read More</button>
+                        </div>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>Dessert Price List</h2>
+            <ul>
+                <li>Red Velvet Lava Cake  $15.89</li>
+                <li>Butterscotch Mousse Cake  $10.12</li>
+                <li>Brownie Fantasy  $5.00</li>
+                <li>Pastry $7.8</li>
+                <li>Red Velvat  $27.5</li>
+                <li>Cupcakes $10.00</li>
+                <li>Kaju Falooda  $54.61</li>
+                <li>Sandwich Ice Cream  $13.78</li>
+            </ul>
+        </div>
+    </div>
+    <div id="sweet">
+        <div class="bg-image"></div>
+        <div class="bg-text">
+            <h2>DESSERT SPOT</h2>
+            <h1 style="font-size:50px">Delicious Dessert Corner</h1>
+            <Marquee>There's Always Time For Dessert.</Marquee>
+        </div>
+    </div>
+    <h1 id="us" style="text-align: center;    background-color: antiquewhite;">Map</h1>
+    <div id="aboutus">
+<!-- <iframe title="Goa frame" style="width:64%; height:400px;margin-left: 147px;" src="https://maps.google.co.in/maps?sll=15.501657,73.792934&amp;sspn=0.090979,0.169086&amp;hl=en&amp;mra=pr&amp;ie=UTF8&amp;ll=15.525413,73.828919&amp;spn=0.090979,0.169086&amp;t=m&amp;output=embed -->
+        <iframe src="https://maps.google.com/maps?q=11.3092666,77.5965181&amp;output=embed" style="border:2px solid red;"></iframe>
+    </div>
+    <div id="address">
+        <p class="add">Contact Details</p>
+        <form name="myForm" onsubmit="validateForm(); return false" action="#">
+            <table id="tab">
+                <tr>
+                    <th><label class="label">Name:</label> </th>
+                    <th><input type="text" id="fname" required></th>
+                </tr>
+                <tr>
+                    <th><label>Place:</label></th>
+                    <th><input type="text" id="place" required></th>
+                </tr>
+                <tr>
+                    <th><label>E-Mail:</label></th>
+                    <th><input type="email" id="email" required></th>
+                </tr>
+                <tr>
+                    <th><label>Date of Birth:</label></th>
+                    <th><input type="datetime" id="dob" required></th>
+                </tr>
+            </table>
+            <div id="but" onclick="demo()"><input type="submit" id="submit" >
+            </div><br>
+          </form></div>
+          <div id="value"><table id="valueres" border="2"></table></div>
+          <br>
+</body>
+</html>

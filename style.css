@@ -1,0 +1,273 @@
+body{
+    margin:0;
+    padding:0;
+    /* height:100px;*/
+    /* background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2FQi-pEsnoHFw%2Fmaxresdefault.jpg&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DQi-pEsnoHFw&tbnid=eKWF_hCKn-dzNM&vet=12ahUKEwibocqFofz0AhW8_jgGHRrvAlkQMygtegUIARDCAg..i&docid=Hk01vPvBBfrUyM&w=1280&h=720&itg=1&q=background%20design%20images&ved=2ahUKEwibocqFofz0AhW8_jgGHRrvAlkQMygtegUIARDCAg"); */
+    background-color: rgb(166, 214, 233); 
+    font-family:Verdana;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 80px; */
+}
+.name h1{
+padding-top: 10px;
+color: rgb(5, 82, 82);
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size: 90;
+text-transform: capitalize;
+text-align: center;
+}
+header {
+    background-color: rgb(189, 103, 37);
+    /* position: fixed; */
+    /* left: 0;
+    right: 0; */
+    /* top: 10px; */
+    height:60%;
+    /* display: flex; */
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 15px;
+    }
+    header li:hover{
+        background-color: #1f201f;
+        border-radius: 15px;
+    padding-right: -10px;}
+li img{
+    width: 36px;
+    height: 36px;
+    border-radius: 2px;
+    /* margin-top: -6px; */
+    padding-top: 10px; 
+}
+header * {
+    display: flex;
+    }
+/* header li {
+    border:1px solid;
+    
+    } */
+header li a {
+    color:rgb(248, 248, 4);
+    text-decoration: none;
+    text-shadow: #f1f1f1 ;
+    font-weight: bold;
+    font-style: italic;
+    font-size:20px;
+    height:20px;
+    padding-top: 20px;
+    /* margin-top: 20px; */
+    margin-right: 55px;
+   align-items: center;
+}
+.dic{
+    height: 100%;
+    display: flex;
+    padding-bottom: 10px;
+
+}
+.contact{
+height:50vh;
+width: 50%;
+padding-left: 10%;
+border-radius: 20px;
+}
+.contact h2{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color:rgb(4, 18, 20);
+}
+.contact ul{
+    font-weight:bolder;
+    padding-top: 15px;
+    text-align:left;
+    text-decoration: rgb(8, 132, 241);
+    color:rgb(214, 155, 72);
+    background-image: url("C:\Users\HP\OneDrive\Pictures\Saved Pictures\pexels-photo.jpeg");
+    height: 32vh;
+    width: 45vh;
+}
+.container
+{
+    height: 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    background-color: rgb(216, 171, 171);
+border-radius: 15px;
+padding-bottom: 20px;
+}
+.card{
+    padding:10px;
+    width: 200px;
+    border:2px solid black;
+    border-radius: 5px;
+    background-color: rgb(216, 171, 171);
+    margin: 0px 10px;
+    position: relative;
+    bottom: 0;
+    height:150px;
+}
+.demo{
+    height:100vx;
+    display: flex;
+}
+.card:hover{
+    height:440px;
+}
+.card:hover img{
+    height:35% ;
+}
+.card:hover .card-content{
+display:block;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.card-content{
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0; 
+  left:0;
+  /* background: rgb(221, 212, 212); */
+  background: rgba(31, 29, 29, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  font-size: 20px;
+  text-align: center;
+  display:none;
+  padding-bottom:20px;
+}
+.card-content button{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: rgb(209, 48, 19);
+    padding:10px 30px;
+    margin:10px;
+    bottom: 0px;
+    box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  border-radius: 15px;
+}
+.card-content p{
+    color: white;
+    font-size: 18px;
+    align-content: center;
+}
+.button:hover{background-color: #3e8e41
+}
+
+#address p{
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #3e8e41;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    display:flex;
+	justify-content: center;
+}
+form{
+    height:40%;
+    width: 30%;
+    padding-left: 40%;
+    align-content: center;
+
+}
+#tab{
+    justify-content: center;
+    border:2px solid black;
+    border-radius: 10px;
+}
+#tab input,#tab label{
+    padding:top 20px;
+    color: rgb(17, 14, 14);
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#value{
+font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color:rgb(153, 153, 12);
+  /* padding-left: 10px; */
+  display: flex;
+  justify-content: center;
+}
+#value td, th {
+    /* border: 2px solid #110f0f; */
+    text-align: left;
+    /* padding: 8px; */
+  }
+#value th{
+    color: #058609;
+    font-weight: bold;
+}
+#but{
+    padding-top: 10px;
+    justify-content: center;
+    display:flex;
+}
+#but input{
+    padding: 10px;
+    border-color: #666;
+    color: #7e0d0d;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#button{
+    background-color: aquamarine;
+}
+#sweet{
+    /* padding-top: 200%; */
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.bg-image {
+    /* The image used */
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%; 
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdhyk05TXBNHm31RjnwMEqXvu2113Kq9ZLVW-jFGhwwzkbmw_0aI0MdB87F2Do_cWJ-A0&usqp=CAU");
+ 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+     /* Fallback color */
+ /* Black w/opacity/see-through */
+ 
+ color: rgb(250, 62, 62);
+    font-weight: bold;
+    border: 3px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  #aboutus{
+      justify-content: center;
+      display: flex;
+      padding-top: 10px;
+  }
