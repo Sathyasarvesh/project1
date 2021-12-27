@@ -8,12 +8,11 @@
         function validateForm(e){
             // e.preventDefault();
             var name=document.getElementById("fname").value;
-            var rollno=document.getElementById("roll").value;
             var place=document.getElementById("place").value;
             var email=document.getElementById("email").value;
             var dob=document.getElementById("dob").value;
-            html="<tr><th>Name</th><th>Roll No</th><th>Place</th><th>E-Mail</th><th>DOB</th></tr>";
-            html+="<tr><td>"+name+"</td><td>"+rollno+"</td><td>"+place+"</td><td>"+email+"</td><td>"+dob+"</td></tr>";
+            html="<tr><th>Name</th><th>Place</th><th>E-Mail</th><th>DOB</th></tr>";
+            html+="<tr><td>"+name+"</td><td>"+place+"</td><td>"+email+"</td><td>"+dob+"</td></tr>";
             document.getElementById("valueres").innerHTML=html;
         }
         function sample_1(){
