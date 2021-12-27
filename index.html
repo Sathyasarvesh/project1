@@ -16,6 +16,10 @@
             html+="<tr><td>"+name+"</td><td>"+rollno+"</td><td>"+place+"</td><td>"+email+"</td><td>"+dob+"</td></tr>";
             document.getElementById("valueres").innerHTML=html;
         }
+        function sample_1(){
+            document.getElementsByClassName("contact")[0].style.backgroundColor="antiquewhite";
+            document.getElementById("sweet").style.backgroundColor="antiquewhite";
+        }
     </script>    
 </head>
 <body>
@@ -34,7 +38,7 @@
             <a href="#sweet"> Sweet Delight </a>
             </li>
         <li>
-        <a onclick="sample()"> Production & Quality </a>
+        <a onclick="sample_1()"> Production & Quality </a>
         </li>
         <li>
         <a href="#aboutus"> About Us </a>
@@ -59,10 +63,7 @@
             document.getElementById("us").style.color="green";
             document.getElementById("us").style.borderRadius="15px";
         }
-        function sample(){
-            document.getElementsByClassName("contact").style.backgroundColor="antiquewhite";
-            document.getElementsByClassName("sweet").style.backgroundColor="antiquewhite";
-        }
+        
     </script>
     <br>
     <div class="dic">
@@ -92,7 +93,7 @@
                         </div>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact_1">
             <h2>Dessert Price List</h2>
             <ul>
                 <li>Red Velvet Lava Cake  $15.89</li>
